@@ -27,5 +27,7 @@ endif ()
 
 target_link_libraries (OpenCL ${CMAKE_DL_LIBS})
 
+install(TARGETS OpenCL DESTINATION "lib")
+
 enable_testing()
 add_subdirectory (test)
